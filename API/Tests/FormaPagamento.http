@@ -1,0 +1,38 @@
+### Cadastrar uma nova forma de pagamento
+POST https://localhost:5001/api/formapagamento/create
+Content-Type: application/json
+
+{
+    "Nome" : "Pix",
+    "TipoPagamento" : "Debito"
+}
+
+### Cadastrar uma nova forma de pagamento
+POST https://localhost:5001/api/formapagamento/create
+Content-Type: application/json
+
+{
+    "Nome" : "Cartão de crédito",
+    "TipoPagamento" : "Crédito"
+}
+
+### Cadastrar uma nova forma de pagamento
+POST https://localhost:5001/api/formapagamento/create
+Content-Type: application/json
+
+{
+    "Nome" : "Cartão de débito",
+    "TipoPagamento" : "Débito"
+}
+
+### Cadastrar uma nova forma de pagamento
+POST https://localhost:5001/api/formapagamento/create
+Content-Type: application/json
+
+{
+    "Nome" : "Boleto",
+    "TipoPagamento" : "Débito"
+}
+
+### Listar todas as formas de pagamento
+GET https://localhost:5001/api/formapagamento/list
