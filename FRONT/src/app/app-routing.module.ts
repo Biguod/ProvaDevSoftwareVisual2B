@@ -1,3 +1,4 @@
+import { FinalizarVendaComponent } from './components/views/produto/finalizar-venda/finalizar-venda.component';
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { CarrinhoComponent } from "./components/views/home/carrinho/carrinho.component";
@@ -21,6 +22,10 @@ const routes: Routes = [
     {
         path: "produto/cadastrar",
         component: CadastrarProdutoComponent,
+    },
+    {
+        path: "FinalizarVenda",
+        component: FinalizarVendaComponent,
     },
 ];
 

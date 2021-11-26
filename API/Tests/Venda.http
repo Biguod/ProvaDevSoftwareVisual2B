@@ -6,20 +6,17 @@ POST https://localhost:5001/api/venda/create
 Content-Type: application/json
 
 {
-    "Cliente" : "Bigu",
-    "FormaPagamentoId" : 2,
-    "Itens" : [
-        {
-            "ProdutoId" : 1,
-            "Quantidade" : 1,
-            "Preco" : 20,
-            "CarrinhoId" : ""
-        },
-        {
-            "ProdutoId" : 2,
-            "Quantidade" : 5,
-            "Preco" : 35,
-            "CarrinhoId" : ""
-        }
-    ]
+
+
+    "cliente": "a",
+    "formaPagamento": null,
+    "formaPagamentoId": 1,
+    "itens": [{ "produto": null, "produtoId": 3, "quantidade": 1, "preco": 5000}],
+    "carrinhoId": "2733575e-2922-4fb1-b241-992d430262b7",
+    "criadoEm": "2021-11-25T21:29:33.5763878-03:00",
+    "itemVendaId": 1,
+    "preco": 5000,
+    "produto": null,
+    "produtoId": 3,
+    "quantidade": 1
 }

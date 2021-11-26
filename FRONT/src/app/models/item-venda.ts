@@ -2,7 +2,7 @@ import { Produto } from "./produto";
 
 export interface ItemVenda {
     itemVendaId?: number;
-    produto: Produto;
+    produto?: Produto;
     produtoId: number;
     quantidade: number;
     preco: number;

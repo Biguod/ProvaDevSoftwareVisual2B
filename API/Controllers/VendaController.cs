@@ -23,10 +23,7 @@ namespace API.Controllers
             _context.Add(venda);
             _context.SaveChanges();
 
-            venda = _context.Vendas.Include(v => v.FormaPagamento)
-                                   .Include(v => v.Itens).ThenInclude(i => i.Produto)
-                                   .ThenInclude(p => p.Categoria)
-                                   .First(f => f.VendaId == venda.VendaId);
+
 
             return Created("", venda);
         }
@@ -38,9 +35,11 @@ namespace API.Controllers
         public IActionResult List()
         {
             var vendas = _context.Vendas.Include(v => v.FormaPagamento)
-                       .Include(v => v.Itens).ThenInclude(i => i.Produto)
-                       .ThenInclude(p => p.Categoria)
-                       .ToList();
+                                        .Include(v => v.Itens)
+                                        .ThenInclude(i => i.Produto)
+                                        .ThenInclude(p => p.Categoria)
+                                        .AsNoTracking()
+                                        .ToList();
 
             return Ok(vendas);
         }

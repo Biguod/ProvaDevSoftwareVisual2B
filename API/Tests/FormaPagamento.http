@@ -4,7 +4,7 @@ Content-Type: application/json
 
 {
     "Nome" : "Pix",
-    "TipoPagamento" : "Debito"
+    "TipoPagamento" : "A vista"
 }
 
 ### Cadastrar uma nova forma de pagamento
@@ -31,7 +31,7 @@ Content-Type: application/json
 
 {
     "Nome" : "Boleto",
-    "TipoPagamento" : "Débito"
+    "TipoPagamento" : "A vista"
 }
 
 ### Listar todas as formas de pagamento
